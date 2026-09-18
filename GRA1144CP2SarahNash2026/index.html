@@ -4,10 +4,16 @@
 <meta charset="UTF-8">
 <title>Red Velvet Cake | Sarah Nash, 2026</title>
 <style>
+	body{
+		margin: 0;
+		background-image: linear-gradient(#dac0af, white);
+	}
 	wrapper {
 		width: 800px;
 		display: block;
 		margin: auto;
+		background-color: RGBA(255, 255, 255, 0.5);
+		padding: 20px;
 	}
 	.logo {
 		width: 250px;
@@ -23,17 +29,29 @@
     h2, h3, p, li {
         color: maroon;
     }
+	.container {
+		display: grid;
+		grid-template-columns: 25% 75%;
+		gap: 16px;
+	}
+	li {
+		padding-bottom: 8px;
+	}
+	footer {
+		font-size: 12px;
+	}
 </style>
 </head>
 
 <body>
 <wrapper>
-  <header> <img class="logo" src="logo.png" />
+  <header> <img class="logo" src="logo.png" alt="the logo" />
     <h1>Red Velvet Cake</h1>
   </header>
-  <main> <img class="banner" src="red-velvet-cake-1.jpg" />
+  <main> <img class="banner" src="red-velvet-cake-1.jpg" alt="a slice of red velvet cake" />
     <h2>Red Velvet Cake</h2>
     <p>Red velvet cake is much more than vanilla cake tinted red. This recipe produces the best red velvet cake with superior buttery, vanilla, and cocoa flavors, as well as a delicious tang from buttermilk. My trick is to whip the egg whites, which guarantees a smooth velvet crumb. From <a href="https://sallysbakingaddiction.com/red-velvet-layer-cake-with-cream-cheese-frosting/" target="_blank">Sally&rsquo;s Baking Addiction.</a></p>
+	  <div class="container">
     <section>
       <h3>Ingredients</h3>
       <ul>
@@ -65,7 +83,7 @@
 		<li>After applying the frosting, refrigerate cake for at least 30-60 minutes before slicing. This helps the cake hold its shape when cutting.</li>
 		<li>Cover leftover cake tightly and store in the refrigerator for 5 days. Frosted cake or unfrosted cake layers can be frozen up to 2-3 months. Thaw overnight in the refrigerator and bring to room temperature before decorating or serving.</li>
       </ol>
-    </section>
+    </section></div>
   </main>
   <footer>
     <p>&copy; 2026, Sarah M. Nash.</p>
