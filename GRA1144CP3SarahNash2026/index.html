@@ -7,22 +7,53 @@
 			margin: 0;
             background-color: black;
 		}
-        h1, p {
+        wrapper {
+            display: block;
+            width: 1366px;
+            margin: auto;
+        }
+        h1:hover {
             color: white;
+            text-align: center;
+        }
+        .intro:hover {
+            color: white;
+            text-align: center;
         }
 		.template {
-			width: 1366px;
-			display: block;
 			margin: auto;
 		}
+        .main {
+            display: block;
+            margin: auto;
+        }
+        .opening {
+            margin: auto;
+            color: white;
+            text-align: center;
+        }
+        footer {
+            font-size: 12px;
+            color: white;
+        }
 	</style>
 </head>
-
 <body>
-	<div class="template">
-		<h1>Heads</h1>
-		<p>Text</p>
+<wrapper>
+    <div class="template">
+            <h1>Heads</h1>
+            <p class="intro">&#8595; scroll down &#8595;</p>
+    </div>
+    <img class="main" src="candles.png" alt="lit-up candles" />
+    <div class="opening">
+        <p>Text</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/IxF55qB4CuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	</div>
+            <p>Insert synopsis here.</p>
+    </div>
+    <footer>
+        <p>&copy; 2026, Sarah M. Nash.</p>
+        <p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+    </footer>
+</wrapper>
 </body>
 </html>
