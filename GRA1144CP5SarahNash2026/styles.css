@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@300&display=swap');
+@import
+    url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
 body {
     margin: 0;
     background-color: #221641;
@@ -37,6 +40,16 @@ h1 {
     margin: 0;
     display: inline;
     color: white;
+    font-family: 'Bitcount Grid Double', system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "CRSV" 0.5,
+      "ELSH" 0,
+      "ELXP" 0;
+    font-size: 60px;
 }
 h2 {
     padding: 20px;
@@ -48,17 +61,20 @@ h3 {
     color: white;
     font-size: large;
     padding-top: 12px;
-    padding-right: 14px;
+    padding-right: 40px;
     padding-bottom: 12px;
-    padding-left: 14px;
+    padding-left: 40px;
 }
 p {
     color: white;
     font-size: medium;
     padding-top: 5px;
-    padding-right: 14px;
+    padding-right: 45px;
     padding-bottom: 5px;
-    padding-left: 14px;
+    padding-left: 45px;
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 ul {
     padding: 0;
@@ -66,11 +82,17 @@ ul {
 }
 footer {
     padding: 20px;
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 #news {
     background-image: url(placeholder-pic-1.jpg);
 }
-#store {
+#email {
+    background-image: url(music-video-bts-cropped.jpg);
+}
+#privacy {
     background-image: url(placeholder-pic-2.jpeg);
 }
 .logo {
@@ -91,7 +113,7 @@ footer {
 #videos .gallery-item {
     margin: 5px;
     border: 1px solid transparent;
-    width: 250px;
+    width: 402px;
 }
 #videos .gallery-item:hover {
   border: 1px solid;
@@ -99,13 +121,16 @@ footer {
 }
 #videos .gallery-item img {
     padding: 1px;
-    width: 248px;
+    width: 400px;
 }
 #videos .gallery-item .desc {
     text-align: center;
     color: white;
     margin: 8px;
-    font-size: small;
+    font-size: 15px;
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 #gallery .gallery {
     display: flex;
@@ -130,7 +155,10 @@ footer {
     text-align: center;
     color: white;
     margin: 8px;
-    font-size: small;
+    font-size: 12px;
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 header {
     padding: 20px;
