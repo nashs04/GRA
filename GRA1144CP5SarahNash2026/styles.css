@@ -99,19 +99,19 @@ footer {
     font-style: normal;
 }
 #news {
-    background-image: url(placeholder-pic-1.jpg);
+    background-image: url(foil-texture-alt.jpg);
 }
 #tour {
-    background-image: url(placeholder-pic-2.jpeg);
+    background-image: url(foil-texture-alt.jpg);
 }
 #email {
     background-image: url(music-video-bts-cropped.jpg);
 }
 #blog {
-    
+    background-image: url(foil-texture-alt.jpg);
 }
 #privacy {
-    
+    background-image: url(foil-texture-alt.jpg);
 }
 .logo {
     width: 200px;
@@ -256,4 +256,9 @@ footer {
     font-family: "Offside", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+.privacypolicy {
+    font-size: 22px;
+    text-align: center;
+    margin: 60px;
 }
