@@ -1,7 +1,11 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@300');
 @import
-    url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
+    url('https://fonts.googleapis.com/css2?family=Offside');
+@font-face {
+  font-family: TheBoldFont;
+  src: url(THEBOLDFONT-FREEVERSION.woff);
+}
 body {
     margin: 0;
     background-color: #221641;
@@ -9,6 +13,11 @@ body {
     background-image: -moz-linear-gradient(310deg,rgba(107,92,128,1.00) 0%,rgba(72,101,102,1.00) 100%);
     background-image: -o-linear-gradient(310deg,rgba(107,92,128,1.00) 0%,rgba(72,101,102,1.00) 100%);
     background-image: linear-gradient(140deg,rgba(107,92,128,1.00) 0%,rgba(72,101,102,1.00) 100%);
+}
+header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
 }
 wrapper {
     width: 1366px;
@@ -18,8 +27,9 @@ wrapper {
 }
 ul a li {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 10px 25px;
     color: #eadbff;
+    font-family: 'TheBoldFont';
 }
 ul a li:hover {
     color: #ffedb1;
@@ -55,10 +65,12 @@ h2 {
     padding: 20px;
     margin: 0;
     color: white;
+    font-family: 'TheBoldFont';
     text-align: center;
 }
 h3 {
     color: white;
+    font-family: 'TheBoldFont';
     font-size: large;
     padding-top: 12px;
     padding-right: 40px;
@@ -89,11 +101,17 @@ footer {
 #news {
     background-image: url(placeholder-pic-1.jpg);
 }
+#tour {
+    background-image: url(placeholder-pic-2.jpeg);
+}
 #email {
     background-image: url(music-video-bts-cropped.jpg);
 }
+#blog {
+    
+}
 #privacy {
-    background-image: url(placeholder-pic-2.jpeg);
+    
 }
 .logo {
     width: 200px;
@@ -103,6 +121,34 @@ footer {
 .frontvideo {
 	width: 1366px;
 	height: 770px;
+}
+#store .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    justify-content: flex-start;
+}
+#store .gallery-item {
+    margin: 5px;
+    border: 1px solid transparent;
+    width: 380px;
+}
+#store .gallery-item:hover {
+  border: 1px solid;
+  border-color: white
+}
+#store .gallery-item img {
+    padding: 1px;
+    width: 378px;
+}
+#store .gallery-item .desc {
+    text-align: center;
+    color: white;
+    margin: 8px;
+    font-size: 15px;
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 #videos .gallery {
     display: flex;
@@ -160,6 +206,54 @@ footer {
     font-weight: 400;
     font-style: normal;
 }
-header {
-    padding: 20px;
+#email .subscribe {
+    padding: 70px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+#email .subscribe input {
+    height: 35px;
+    width: 450px;
+    border-radius: 15px;
+    margin: 2px;
+    border: #221641 solid 1px;
+}
+#email .subscribe button {
+    height: 40px;
+    width: 100px;
+    border-radius: 15px;
+    margin: 2px;
+    color: #d5b7ff;
+    background-color: #6b5c80;
+    border: #221641 solid 1px;
+}
+#merch .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    justify-content: flex-start;
+}
+#merch .gallery-item {
+    margin: 5px;
+    border: 1px solid transparent;
+    width: 380px;
+}
+#merch .gallery-item:hover {
+  border: 1px solid;
+  border-color: white
+}
+#merch .gallery-item img {
+    padding: 1px;
+    width: 378px;
+}
+#merch .gallery-item .desc {
+    text-align: center;
+    color: white;
+    margin: 8px;
+    font-size: 15px;
+    font-family: "Offside", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
