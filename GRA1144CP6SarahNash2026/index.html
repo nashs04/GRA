@@ -23,6 +23,9 @@ main {
 	grid-template-columns: 48.5% 48.5%;
 	gap: 16px;
 }
+section {
+    height: 827px;
+}
 #apparel {
     position: relative;
 }
@@ -32,6 +35,28 @@ main {
 	left: 0;
 	width: 100%;
 	height: auto;
+}
+#colors button {
+    width: 50px;
+    margin: 10px;
+    border-radius: 25px;
+    border: thick solid white;
+    height: 50px;
+}
+#colors button:hover {
+    border-color: black;
+}
+#blue-btn {
+    background-color: #3980b4;
+}
+#dark-teal-btn {
+    background-color: #0e343f;
+}
+#green-btn {
+    background-color: #436f4e;
+}
+#red-btn {
+    background-color: #784a4a;
 }
 </style>
 <script type="text/javascript">
@@ -56,6 +81,13 @@ function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
 </script>
 </head>
 
@@ -66,7 +98,14 @@ function MM_swapImage() { //v3.0
   </header>
   <main>
     <section id="apparel"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('hoodie-dark-teal','','back-hoodie-dark-teal.jpg',1)"><img src="front-hoodie-dark-teal.jpg" alt="Hoodie Dark Teal" width="2000" height="2501" id="hoodie-dark-teal"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('hoodie-red','','back-hoodie-red.jpg',1)"><img src="front-hoodie-red.jpg" alt="Hoodie Red" width="2000" height="2501" id="hoodie-red"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('hoodie-blue','','back-hoodie-blue.jpg',1)"><img src="front-hoodie-blue.jpg" alt="Hoodie Blue" width="2000" height="2501" id="hoodie-blue"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('hoodie-green','','back-hoodie-green.jpg',1)"><img src="front-hoodie-green.jpg" alt="Hoodie Green" width="2000" height="2501" id="hoodie-green"></a></section>
-    <section id="description"></section>
+    <section id="description">
+      <div id="colors">
+        <button id="blue-btn" onClick="MM_showHideLayers('hoodie-dark-teal','','hide','hoodie-red','','hide','hoodie-blue','','show','hoodie-green','','hide')"></button>
+        <button id="dark-teal-btn" onClick="MM_showHideLayers('hoodie-dark-teal','','show','hoodie-red','','hide','hoodie-blue','','hide','hoodie-green','','hide')"></button>
+        <button id="green-btn" onClick="MM_showHideLayers('hoodie-dark-teal','','hide','hoodie-red','','hide','hoodie-blue','','hide','hoodie-green','','show')"></button>
+        <button id="red-btn" onClick="MM_showHideLayers('hoodie-dark-teal','','hide','hoodie-red','','show','hoodie-blue','','hide','hoodie-green','','hide')"></button>
+      </div>
+    </section>
   </main>
   <footer></footer>
 </wrapper>
