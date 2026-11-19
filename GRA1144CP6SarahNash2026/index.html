@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>MODA | Hoodie | Sarah Nash, 2026</title>
+<link href="https://fonts.googleapis.com/css?family=Balsamiq+Sans" rel="stylesheet">
 <style type="text/css">
 body {
     margin: 0;
-    background-color: lightgrey;
+    background-color: lightgreen;
 }
 wrapper {
     width: 1366px;
@@ -17,6 +18,11 @@ wrapper {
 header {
     background-color: black;
     color: white;
+    padding: 8px;
+    text-align: center;
+}
+h1 {
+    font-family: 'Balsamiq Sans'
 }
 main {
 	display: grid;
@@ -57,6 +63,27 @@ section {
 }
 #red-btn {
     background-color: #784a4a;
+}
+.productinfo {
+    padding: 8px;
+    font-size: 18px;
+}
+.sizes {
+    padding: 5px;
+    margin: 2px;
+    font-size: 25px;
+}
+.price {
+    padding: 10px;
+    font-size: 40px;
+}
+.cart {
+    padding: 10px;
+    margin: 2px;
+    font-size: 20px;
+}
+footer {
+    padding: 25px 30px;
 }
 </style>
 <script type="text/javascript">
@@ -105,9 +132,17 @@ function MM_showHideLayers() { //v9.0
         <button id="green-btn" onClick="MM_showHideLayers('hoodie-dark-teal','','hide','hoodie-red','','hide','hoodie-blue','','hide','hoodie-green','','show')"></button>
         <button id="red-btn" onClick="MM_showHideLayers('hoodie-dark-teal','','hide','hoodie-red','','show','hoodie-blue','','hide','hoodie-green','','hide')"></button>
       </div>
+      <h2>Designer's Hoodie</h2>
+      <p class="productinfo"><b>This website is still in construction. It may not be finished within the time I have left.</b> Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat in id cursus mi.</p>
+      <button class="sizes">S</button>
+      <button class="sizes">M</button>
+      <button class="sizes">L</button>
+      <button class="sizes">XL</button>
+      <p class="price">&#36;14.00</p>
+      <button class="cart">&#128722; Add to Cart</button>
     </section>
   </main>
-  <footer></footer>
+  <footer>&copy; 2026, Sarah Nash. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
 </wrapper>
 </body>
 </html>
